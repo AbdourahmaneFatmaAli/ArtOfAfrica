@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet"/>
+    <title>About our Project</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            overflow-x: hidden;
+            background: linear-gradient(270deg, #fbc2eb, #a6c1ee, #fbc2eb);
+            background-size: 600% 600%; 
+            animation: gradientBG 20s ease infinite;
+        }
+
+        @keyframes gradientBG {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
+        }
+        header {
+            text-align: center;
+            padding: 60px 20px 20px;
+            color: white;
+            text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+        }
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.3rem;
+            font-weight: 300;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+            padding: 18px;
+            flex: 1 1 250px;
+            max-width: 320px;
+            transition: transform 0.3s, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+        }
+        .card h2{
+            color: #5b21b6;
+            margin-bottom: 12px;
+            font-size: 1.4rem;
+        }
+
+        .card p, .card ul{
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+        .card ul{
+            padding-left: 18px;
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            background: rgba(0,0,0,0.1);
+            padding: 10px 0;
+            backdrop-filter: blur(5px);
+        }
+        .navbar a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: 0.3s;
+
+        }
+        .navbar a:hover {
+            color: #fbbf24;
+        }
+
+    </style>
+</head>
+<body>
+<header>
+    <h1> About The Website</h1>
+    <p>Discover, Share, connect, and celebrate Africa</p>
+</header>
+<div class="navbar">
+    <a href="ArtPage.php">Home</a>
+    <a href="Profile.php">Profile</a>
+    <a href="About.html">About</a>
+</div>
+<div class="container">
+    <div class="card">
+        <h2>Project Overview</h2>
+        <p>Every painting has a story, and every artist has a dream. 
+        this project is a small world where those stories come alive.
+
+        <p>A place where African artists can share their work, and anyone who 
+        visits can feel the colors, the emotions, and the ideas behind each piece. </p>
+
+        <p>Africa is full of creativity, culture, and beauty, and it deserves to be celebrated.
+        I wanted to create more than just a gallery I wanted a space where creativity connects people.</p>
+    </div>
+    <div class="card">
+        <h2>Key Features</h2>
+        <ul>
+            
+            <li>Browse and explore African artwork</li>
+
+            <li>Learn about the artist and the story behind each piece</li>
+
+            <li>Upload and share your own creations</li>
+
+            <li>Connect with other art lovers and creators</li>
+
+            <li>Comment and interact with artworks to share your appreciation</li>
+
+            <li>Have an immersive experience of the artwork</li>
+        </ul>
+    </div>
+    <div class="card">
+            <h2>My Goals</h2>
+            <p>Africa is full of talent, and one of the brightest is art. 
+            African artists create amazing pieces, but often their work is hard to showcase, 
+            and many feel their art is not valued because it’s not seen. 
+            My goal is to change that.</p>
+            <p>This project creates an environment where African artists 
+            can share their work, where their voices are heard, and where every painting is appreciated. 
+            Here, your creativity matters, your stories matter, and your art will be celebrated.</p>
+    </div>
+
+    <div class="card">
+        <h2> Why African Art?</h2>
+        <p>Because each piece tells who we are and where we come from</p>
+    </div>
+
+</div>
+    
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<?php
+session_start();
+include 'db.php';
+
+
+$username = '';
+if(isset($_SESSION['username'])){
+  $username = $_SESSION['username'];
+ 
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css?v=125">
+    
+    
+   
+</head>
+<body>
+    <nav>
+        
+        <ul class="nav_links">
+          <?php if($username): ?>
+            <li class="link username-display">
+              <a href="#"><?php echo htmlspecialchars($username); ?></a>
+            </li>
+          <?php endif; ?>
+
+            <li class="link"><a href="ArtPage.html">Home</a></li>
+            <li class="link"><a href="about_project.html">About</a></li>
+          
+          <?php if($username): ?>
+            <li class="link"><a href="index.php">Login</a></li>
+            <li class="link"><a href="register.php">Sign Up</a></li>
+          <?php else: ?>
+            <li class="link"><a href="logout.php">Logout</a></li>
+          <?php endif; ?>
+        	
+
+        </ul>
+    </nav>
+    <header>
+        <div class="art-section">
+            <div class="text">
+                <h1>African Art</h1>
+                <p>Welcome, artists and art lovers! Discover the most wonderful 
+                  paintings and pieces of African art from talented creators around the world. 
+                  Explore stunning works, find inspiration, and share your own masterpieces with 
+                  us.
+                </p>
+                
+                </div>
+
+                
+
+        </div>
+    
+    
+
+
+
+
+
+   
